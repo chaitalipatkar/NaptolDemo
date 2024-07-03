@@ -2,29 +2,37 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-07-03T14:51:12 IST" name="Default suite" finished-at="2024-07-03T14:51:58 IST" duration-ms="46678">
+  <suite started-at="2024-07-03T15:55:09 IST" name="Default suite" finished-at="2024-07-03T15:56:05 IST" duration-ms="55972">
     <groups>
     </groups>
-    <test started-at="2024-07-03T14:51:12 IST" name="Default test" finished-at="2024-07-03T14:51:58 IST" duration-ms="46678">
+    <test started-at="2024-07-03T15:55:09 IST" name="Default test" finished-at="2024-07-03T15:56:05 IST" duration-ms="55972">
       <class name="test.Checkout">
-        <test-method is-config="true" signature="configureReporting()[pri:0, instance:test.Checkout@28261e8e]" started-at="2024-07-03T14:51:12 IST" name="configureReporting" finished-at="2024-07-03T14:51:13 IST" duration-ms="771" status="PASS">
+        <test-method is-config="true" signature="configureReporting()[pri:0, instance:test.Checkout@28261e8e]" started-at="2024-07-03T15:55:09 IST" name="configureReporting" finished-at="2024-07-03T15:55:10 IST" duration-ms="676" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configureReporting -->
-        <test-method is-config="true" signature="openApplication()[pri:0, instance:test.Checkout@28261e8e]" started-at="2024-07-03T14:51:13 IST" name="openApplication" finished-at="2024-07-03T14:51:26 IST" duration-ms="13498" status="PASS">
+        <test-method is-config="true" signature="openApplication()[pri:0, instance:test.Checkout@28261e8e]" started-at="2024-07-03T15:55:10 IST" name="openApplication" finished-at="2024-07-03T15:55:23 IST" duration-ms="13394" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApplication -->
-        <test-method signature="verifyProceedToCheckout()[pri:0, instance:test.Checkout@28261e8e]" started-at="2024-07-03T14:51:26 IST" name="verifyProceedToCheckout" finished-at="2024-07-03T14:51:57 IST" duration-ms="30895" status="FAIL">
-          <exception class="java.lang.NullPointerException">
+        <test-method signature="verifyProceedToCheckout()[pri:0, instance:test.Checkout@28261e8e]" started-at="2024-07-03T15:55:23 IST" name="verifyProceedToCheckout" finished-at="2024-07-03T15:56:04 IST" duration-ms="40794" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[Cannot invoke "org.apache.poi.ss.usermodel.Sheet.getRow(int)" because the return value of "org.apache.poi.ss.usermodel.Workbook.getSheet(String)" is null]]>
+              <![CDATA[Cannot locate option with text: Thane
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
+Driver info: driver.version: unknown]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.apache.poi.ss.usermodel.Sheet.getRow(int)" because the return value of "org.apache.poi.ss.usermodel.Workbook.getSheet(String)" is null
-at utility.Parametrization.getTestData(Parametrization.java:13)
-at pom.ShippingAddress.enterFirstName(ShippingAddress.java:38)
-at test.Checkout.verifyProceedToCheckout(Checkout.java:55)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate option with text: Thane
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
+Driver info: driver.version: unknown
+at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:153)
+at pom.ShippingAddress.selectCity(ShippingAddress.java:71)
+at test.Checkout.verifyProceedToCheckout(Checkout.java:61)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -55,11 +63,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyProceedToCheckout -->
-        <test-method is-config="true" signature="publishReport()[pri:0, instance:test.Checkout@28261e8e]" started-at="2024-07-03T14:51:57 IST" name="publishReport" finished-at="2024-07-03T14:51:58 IST" duration-ms="1177" status="PASS">
+        <test-method is-config="true" signature="publishReport()[pri:0, instance:test.Checkout@28261e8e]" started-at="2024-07-03T15:56:05 IST" name="publishReport" finished-at="2024-07-03T15:56:05 IST" duration-ms="737" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- publishReport -->

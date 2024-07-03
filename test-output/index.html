@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\SWAPNIL\AppData\Local\Temp\testng-eclipse--1190682997\testng-customsuite.xml</span>
+                    <span>C:\Users\SWAPNIL\AppData\Local\Temp\testng-eclipse--518947891\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -129,10 +129,14 @@
                   <a name="verifyProceedToCheckout">
                   </a> <!-- verifyProceedToCheckout -->
                   <span class="method-name">verifyProceedToCheckout</span>
-                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;org.apache.poi.ss.usermodel.Sheet.getRow(int)&quot; because the return value of &quot;org.apache.poi.ss.usermodel.Workbook.getSheet(String)&quot; is null
-	at utility.Parametrization.getTestData(Parametrization.java:13)
-	at pom.ShippingAddress.enterFirstName(ShippingAddress.java:38)
-	at test.Checkout.verifyProceedToCheckout(Checkout.java:55)
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Cannot locate option with text: Thane
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.11&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:153)
+	at pom.ShippingAddress.selectCity(ShippingAddress.java:71)
+	at test.Checkout.verifyProceedToCheckout(Checkout.java:61)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -170,7 +174,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\SWAPNIL\AppData\Local\Temp\testng-eclipse--1190682997\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\SWAPNIL\AppData\Local\Temp\testng-eclipse--518947891\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -223,12 +227,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'verifyProceedToCheckout')
 data.setCell(0, 2, 'test.Checkout')
-data.setCell(0, 3, 30895);
+data.setCell(0, 3, 40794);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 30 seconds</span>
+              <span class="suite-total-time">Total running time: 40 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -261,17 +265,17 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="configuration-method before">
                 <span class="method-name">openApplication</span>
-                <span class="method-start">823 ms</span>
+                <span class="method-start">737 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">verifyProceedToCheckout</span>
-                <span class="method-start">14326 ms</span>
+                <span class="method-start">14134 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">publishReport</span>
-                <span class="method-start">45467 ms</span>
+                <span class="method-start">55209 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

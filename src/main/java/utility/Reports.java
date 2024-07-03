@@ -12,15 +12,7 @@ public class Reports {
 	    reports.setSystemInfo("Project","Naaptol");
 	    return reports;
 	   
-	    
-	//public static ExtentReports configureReports() {
-	//ExtentReports reports = new ExtentReports();
-	//ExtentSparkReporter html= new ExtentSparkReporter("NaptoolReports.html");
-	//reports.attachReporter(html);
-	//reports.setSystemInfo("Project", "Naaptol");
-	//reports.setSystemInfo("CreatedBy", "Chaitali");
-	//return reports;
-   }
+	}	
 
 }
 

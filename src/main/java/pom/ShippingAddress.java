@@ -35,27 +35,27 @@ public class ShippingAddress {
 	}
 
 	public void enterFirstName() throws EncryptedDocumentException, IOException {
-		String Name = Parametrization.getTestData(1, 0, "UserDetail");
+		String Name = Parametrization.getTestData(1, 0, "sheet1");
 		firstname.sendKeys(Name);
 	}
 
 	public void enterLastName() throws EncryptedDocumentException, IOException {
-		String Lastname = Parametrization.getTestData(1, 1, "UserDetail");
+		String Lastname = Parametrization.getTestData(1, 1, "sheet1");
 		lastname.sendKeys(Lastname);
 	}
 
 	public void enterAddress() throws EncryptedDocumentException, IOException {
-		String add = Parametrization.getTestData(1, 3, "UserDetail");
+		String add = Parametrization.getTestData(1, 3, "sheet1");
 		address.sendKeys(add);
 	}
 
 	public void enterLandMark() throws EncryptedDocumentException, IOException {
-		String mark = Parametrization.getTestData(1, 5, "UserDetail");
+		String mark = Parametrization.getTestData(1, 5, "sheet1");
 		landmark.sendKeys(mark);
 	}
 
 	public void enterPincode() throws EncryptedDocumentException, IOException {
-		String pin = Parametrization.getTestData(1, 4, "UserDetail");
+		String pin = Parametrization.getTestData(1, 4, "sheet1");
 		pincode.sendKeys(pin);
 	}
 
@@ -72,12 +72,12 @@ public class ShippingAddress {
 	}
 
 	public void enterMobileNoinShippingAddrees() throws EncryptedDocumentException, IOException {
-		String mobileNumber = Parametrization.getTestData(1, 2, "UserDetail");
+		String mobileNumber = Parametrization.getTestData(1, 2, "sheet1");
 		mobileNumberInAddress.sendKeys(mobileNumber);
 	}
 
 	public void enterLandLine() throws EncryptedDocumentException, IOException {
-		String landline = Parametrization.getTestData(1, 6, "UserDetail");
+		String landline = Parametrization.getTestData(1, 6, "sheet1");
 		landLine.sendKeys(landline);
 	}
 
